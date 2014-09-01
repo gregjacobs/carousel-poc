@@ -17,13 +17,11 @@
 
 <body ng-controller="MainCtrl">
 	
-	<h3>Standard carousel with thumbs navigation </h3>
-	<div class="details">This one has an initial index and the thumbs controls the rn-carousel-index binding</div>
 	<ul rn-carousel rn-carousel-index="index" class="my-slider ng-cloak">
 		<li ng-repeat="image in images" ng-style="{'background-image': 'url(' + image + ')'}"></li>
 	</ul>
 	<div class="ng-cloak thumbs">
-		<div class="thumb" ng-repeat="image in images" ng-click="$parent.index=$index" ng-style="{'background-image': 'url(' + image + ')'}" ng-class="{'is-active': ($parent.index==$index)}"></div>
+		<div class="thumb" ng-repeat="image in images" ng-click="updateIndex( $index )" ng-style="{'background-image': 'url(' + image + ')'}" ng-class="{'is-active': ($parent.index==$index)}"></div>
 	</div>
 	
 </body>

@@ -11,4 +11,8 @@ angular.module( 'CarouselPoc' ).controller( 'MainCtrl', function( $scope ) {
 		'img/14758_wpm_lowres.jpg'
 	];
 	
+	$scope.updateIndex = function( idx ) {
+		$scope.index = idx;
+	}
+	
 } );
