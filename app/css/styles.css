@@ -1,32 +1,12 @@
-.my-slider {
-	width: 450px;
-	height: 300px;
-	font-size: 0;
-}
+.my-slider { width: 450px; height: 300px; font-size: 0; }
+.my-slider li { box-sizing: border-box; position: relative; background-size: cover; }
 
-.my-slider li {
-	box-sizing: border-box;
-	font-size: 30px;
-	position: relative;
-	background-size: cover;
-}
+.slide {}
+.slide:before { content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.25em; } /* vertical centering "ghost" element - http://css-tricks.com/centering-in-the-unknown/ */
 
+.slide-content { display: inline-block; padding: 0 5px; color: white; vertical-align: middle; width: 400px; font-size: 30px; }
+.learn-more { display: block; color: white; text-decoration: none; font-size: 14px; }
 
-.thumbs {
-	width: 450px;
-	text-align: center;
-}
-
-.thumb {
-	display: inline-block;
-	background-size: cover;
-	border: 1px solid transparent;
-	margin: 2px 4px;
-	width: 60px;
-	height: 40px;
-	transition: border 0.2s ease-in;
-}
-
-.is-active {
-    border: 1px solid red;
-}
+.thumbs { width: 450px; text-align: center; }
+.thumb { display: inline-block; background-size: cover; border: 1px solid transparent; margin: 2px 4px; width: 60px; height: 40px; transition: border 0.2s ease-in; }
+.thumb-active { border: 1px solid red; }
