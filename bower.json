@@ -1,0 +1,17 @@
+{
+  "name": "carousel-poc",
+  "description": "POC for the MS carousel",
+  "version": "0.0.0",
+  "homepage": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-mocks": "~1.2.15",
+    "bootstrap": "~3.1.1",
+    "angular-carousel": "~0.2.5"
+  },
+  "resolutions": {
+    "angular": "1.2.24-build.413+sha.9bf964f"
+  }
+}

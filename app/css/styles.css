@@ -1,0 +1,26 @@
+.my-slider {
+	width: 450px;
+	height: 300px;
+	font-size: 0;
+}
+
+.my-slider li {
+	box-sizing: border-box;
+	font-size: 30px;
+	position: relative;
+	background-size: cover;
+}
+
+.thumb {
+	display: inline-block;
+	background-size: cover;
+	border: 1px solid transparent;
+	margin: 2px 4px;
+	width: 60px;
+	height: 40px;
+	transition: border 0.2s ease-in;
+}
+
+.is-active {
+    border: 1px solid red;
+}

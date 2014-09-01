@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="CarouselPoc">
+<head>
+	<meta charset="utf-8">
+	<title>Carousel POC</title>
+	
+	<link href="../bower_components/angular-carousel/dist/angular-carousel.css" rel="stylesheet" type="text/css" />
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+	<script src="../bower_components/angular/angular.js"></script>
+	<script src="../bower_components/angular-touch/angular-touch.js"></script>
+	<script src="../bower_components/angular-carousel/dist/angular-carousel.js"></script>
+	
+	<script src="js/app.js"></script>
+	<script src="js/controllers/MainCtrl.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+	
+	<h3>Standard carousel with thumbs navigation </h3>
+	<div class="details">This one has an initial index and the thumbs controls the rn-carousel-index binding</div>
+	<ul rn-carousel rn-carousel-index="index" class="my-slider ng-cloak">
+		<li ng-repeat="image in images" ng-style="{'background-image': 'url(' + image + ')'}"></li>
+	</ul>
+	<div class="ng-cloak thumbs">
+		<div class="thumb" ng-repeat="image in images" ng-click="$parent.index=$index" ng-style="{'background-image': 'url(' + image + ')'}" ng-class="{'is-active': ($parent.index==$index)}"></div>
+	</div>
+	
+</body>
+</html>
