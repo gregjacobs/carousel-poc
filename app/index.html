@@ -13,21 +13,12 @@
 	
 	<script src="js/app.js"></script>
 	<script src="js/controllers/MainCtrl.js"></script>
+	<script src="js/directives/marketingCarousel.js"></script>
 </head>
 
 <body ng-controller="MainCtrl">
 	
-	<ul rn-carousel rn-carousel-index="index" class="my-slider ng-cloak">
-		<li ng-repeat="image in images" class="slide" ng-style="{'background-image': 'url(' + image.url + ')'}">
-			<div class="slide-content">
-				{{image.description}}
-				<a href="javascript:;" class="learn-more">Learn More &gt;&gt;</a>
-			</div>
-		</li>
-	</ul>
-	<div class="ng-cloak thumbs">
-		<div class="thumb" ng-repeat="image in images" ng-click="updateIndex( $index )" ng-style="{'background-image': 'url(' + image.thumbUrl + ')'}" ng-class="{'thumb-active': ($parent.index==$index)}"></div>
-	</div>
+	<marketing-carousel images="images" index="index"></marketing-carousel>
 	
 </body>
 </html>
