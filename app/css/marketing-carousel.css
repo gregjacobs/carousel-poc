@@ -1,0 +1,12 @@
+.marketing-carousel-slider { width: 450px; height: 300px; font-size: 0; }
+.marketing-carousel-slider li { box-sizing: border-box; position: relative; background-size: cover; }
+
+.marketing-carousel-slide {}
+.marketing-carousel-slide:before { content: ''; display: inline-block; height: 100%; vertical-align: middle; margin-right: -0.25em; } /* vertical centering "ghost" element - http://css-tricks.com/centering-in-the-unknown/ */
+
+.marketing-carousel-slide-content { display: inline-block; padding: 0 5px; color: white; vertical-align: middle; width: 400px; font-size: 30px; }
+.marketing-carousel-learn-more { display: block; color: white; text-decoration: none; font-size: 14px; }
+
+.marketing-carousel-thumbs { width: 450px; text-align: center; }
+.marketing-carousel-thumb { display: inline-block; background-size: cover; border: 1px solid transparent; margin: 2px 4px; width: 60px; height: 40px; transition: border 0.2s ease-in; }
+.marketing-carousel-thumb-active { border: 1px solid red; }
