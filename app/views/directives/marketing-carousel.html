@@ -1,11 +1,15 @@
+<!-- Slides -->
 <ul rn-carousel rn-carousel-index="index" class="marketing-carousel-slider ng-cloak">
 	<li ng-repeat="image in images" class="marketing-carousel-slide" ng-style="{'background-image': 'url(' + image.url + ')'}">
 		<div class="marketing-carousel-slide-content">
 			{{image.description}}
+			
 			<a href="javascript:;" class="marketing-carousel-learn-more">Learn More &gt;&gt;</a>
 		</div>
 	</li>
 </ul>
+
+<!-- Thumbnails -->
 <div class="ng-cloak marketing-carousel-thumbs">
 	<div class="marketing-carousel-thumb" ng-repeat="image in images" ng-click="updateIndex( $index )" ng-style="{'background-image': 'url(' + image.thumbUrl + ')'}" ng-class="{'marketing-carousel-thumb-active': ($parent.index==$index)}"></div>
 </div>
